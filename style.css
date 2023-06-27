@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+body {
+	background: #000;
+	display: flex;
+	flex-direction: column;
+	background-repeat: no-repeat;
+	background-size: cover;
+	justify-content: space-around;
+	align-items: center;
+	min-height: 100vh;
+	font-family: 'Pacifico', cursive;
+	text-align: center;
+	color: #fff;
+}
+body.ghost-bg{
+	background: -webkit-radial-gradient(center, ellipse cover,  #009688 0%,#00796B 41%,#004D40 100%); 
+}
+body.spider-bg{
+	background: -webkit-radial-gradient(center, ellipse cover,  #FFB300 0%,#FFA000 41%,#E65100 100%); 
+}
+svg {
+	height: 30vh;
+}
+svg:hover {
+	cursor: pointer;
+}
+a {
+	text-decoration: none;
+}
+
+footer {
+	background: rgba(0,0,0,0.8);
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+.ghost-1 {
+  fill: #f5f5f5;
+}
+
+.ghost-2 {
+  fill: #263238;
+}
+
+.ghost-3 {
+  fill: #f8bbcf;
+}
+
+.ghost-4 {
+  fill: #a5a5a5;
+}
+
+#_02-ghost {
+  position: relative;
+  left: 0px;
+}
+
+
+#ghost {
+	animation: floaty 1.75s infinite;
+}
+
+#shadow {
+	animation: shadow 1.75s infinite;
+    transform-origin: 50% 50%;
+}
+
+@keyframes shadow {
+  0% {
+    transform: scale(0.9);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0.9);
+  }
+}
+
+@keyframes floaty {
+  0% {
+    transform: translateY(25px);
+  }
+
+  50% {
+    transform: translateY(0px);
+  }
+
+  100% {
+    transform: translateY(25px);
+  }
+}
