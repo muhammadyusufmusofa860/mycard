@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+body {
+	background: #000;
+	display: flex;
+	flex-direction: column;
+	background-repeat: no-repeat;
+	background-size: cover;
+	justify-content: space-around;
+	align-items: center;
+	min-height: 100vh;
+	font-family: 'Patua One', cursive;
+	text-align: center;
+	color: #FCFBF7;
+}
+
+.card{
+  background: #000;
+  position: relative;
+  top: -10vw;
+  width: 80vw;
+  height: 60vw;
+  border-radius: 5vw;
+  animation: fadeIn 3s;
+}
+
+.css-example {
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    animation: fadeIn 3s;
+}
+
+.custom-counter {
+    position: relative;
+    width: 20vw;
+    height: 20vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    font-size: 3.5vw;
+}
+
+.custom-counter > .svgline {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.custom-counter > .svgline > .svgpath {
+    stroke: #FCFBF7;
+    fill: #201D1E;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+    animation: fadeIn 3s;
+}
+
+.fade-in-image {
+  animation: fadeIn 3s;
+  -webkit-animation: fadeIn 5s;
+  -moz-animation: fadeIn 5s;
+  -o-animation: fadeIn 5s;
+  -ms-animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-moz-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-o-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-ms-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
